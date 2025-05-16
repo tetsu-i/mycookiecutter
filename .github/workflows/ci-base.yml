@@ -1,15 +1,23 @@
-name: deptry
+# .github/workflows/ci-base.yml
+name: CI Base
 
-on: pull_request
+on:
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
+      args:
+        required: true
+        type: string
 
 jobs:
-  deptry:
+  run-uv:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
-      group: deptry-${{ github.ref }}
+      group: ${{ inputs.name }}-${{ github.ref_name }}
       cancel-in-progress: true
-
     steps:
       - uses: actions/checkout@v4
       - name: Install uv
@@ -17,8 +25,7 @@ jobs:
         with:
           version: "0.7.4"
           enable-cache: true
-
       - name: Install the project
         run: uv sync --locked --all-extras --dev
-      - name: Run deptry
-        run: uv run deptry .
+      - name: Run ${{ inputs.name }}
+        run: uv run ${{ inputs.args }}
