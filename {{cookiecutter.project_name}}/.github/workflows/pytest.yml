@@ -1,15 +1,17 @@
-name: Main
+name: pytest
 
 on: pull_request
 
 jobs:
-  uv-ci:
-    name: python
+  pytest:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: pytest-${{ github.ref }}
+      cancel-in-progress: true
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -18,15 +20,5 @@ jobs:
 
       - name: Install the project
         run: uv sync --locked --all-extras --dev
-
-      - name: Run tests
+      - name: Run pytest
         run: uv run pytest tests
-
-      - name: Run ruff
-        run: uv run ruff --fix --check --all
-
-      - name: Run mypy
-        run: uv run mypy 
-
-      - name: Run deptry
-        run: uv run deptry 
