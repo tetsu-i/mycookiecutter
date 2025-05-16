@@ -1,5 +1,6 @@
 name: pytest
 on: pull_request
+
 jobs:
   pytest:
     uses: ./.github/workflows/ci-base.yml
