@@ -21,4 +21,4 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
       - name: Run deptry
-        run: uv run deptry
+        run: uv run deptry .
