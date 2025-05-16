@@ -15,10 +15,17 @@ dev = [
 ]
 
 [tool.mypy]
-plugins = ["pydantic.mypy"]
+exclude = "{{cookiecutter.project_name}}"
 follow_imports = "silent"
 warn_redundant_casts = true
 warn_unused_ignores = true
 disallow_any_generics = true
 check_untyped_defs = true
 no_implicit_reexport = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+
+[tool.deptry.per_rule_ignores]
+DEP001 = ["pydantic_settings"]
