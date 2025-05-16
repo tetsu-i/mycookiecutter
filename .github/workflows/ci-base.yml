@@ -25,6 +25,6 @@ jobs:
           version: "0.7.4"
           enable-cache: true
       - name: Install the project
-        run: uv sync --locked --all-extras --dev
+        run: uv sync --all-extras --dev
       - name: Run ${{ inputs.name }}
         run: uv run ${{ inputs.args }}
