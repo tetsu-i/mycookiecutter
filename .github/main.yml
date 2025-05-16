@@ -1,5 +1,7 @@
 name: Main
 
+on: pull_request
+
 jobs:
   uv-ci:
     name: python
