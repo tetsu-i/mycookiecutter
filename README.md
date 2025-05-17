@@ -2,6 +2,7 @@
 [![deptry](https://github.com/tetsu-i/mycookiecutter/actions/workflows/deptry.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/deptry.yml)
 [![mypy](https://github.com/tetsu-i/mycookiecutter/actions/workflows/mypy.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/mypy.yml)
 [![pytest](https://github.com/tetsu-i/mycookiecutter/actions/workflows/pytest.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/pytest.yml)
+[![typos](https://github.com/tetsu-i/mycookiecutter/actions/workflows/typos.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/typos.yml)
 
 # My CookieCutter 
 
@@ -17,6 +18,7 @@
 - [mypy](https://mypy.readthedocs.io/)
 - [pre-commit](https://pre-commit.com/)
 - [deptry](https://deptry.com/)
+- [typos](https://github.com/crate-ci/typos)
 
 ## Testing
 - [pytest](https://docs.pytest.org/)

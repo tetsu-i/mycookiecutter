@@ -1,0 +1,22 @@
+name: typos
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+env:
+  CLICOLOR: 1
+
+jobs:
+  typos:
+    name: typos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Spell Check Repo
+        uses: crate-ci/typos@v1.32.0
