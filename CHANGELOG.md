@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.0](https://github.com/tetsu-i/mycookiecutter/compare/v0.1.3...v0.2.0) (2025-05-17)
+
+
+### Features
+
+* testの追加 ([#30](https://github.com/tetsu-i/mycookiecutter/issues/30)) ([b0b4367](https://github.com/tetsu-i/mycookiecutter/commit/b0b4367bbd377758f600776a46d86027ff5bb0b1))
+
+
+### Bug Fixes
+
+* inner project release-please config ([#35](https://github.com/tetsu-i/mycookiecutter/issues/35)) ([d70c1ff](https://github.com/tetsu-i/mycookiecutter/commit/d70c1ffe23e878f8c5aba366746b0949b3221887))
+
+
+### Documentation
+
+* fix getting started ([#34](https://github.com/tetsu-i/mycookiecutter/issues/34)) ([45f2e4c](https://github.com/tetsu-i/mycookiecutter/commit/45f2e4c82f87da8d7b3dcc654e4ce6deeb03dbf5))
+* license部分の削除 ([#33](https://github.com/tetsu-i/mycookiecutter/issues/33)) ([5be2978](https://github.com/tetsu-i/mycookiecutter/commit/5be29788ae2b6f509ee77d58e31c2a5b9348f4ed))
+
 ## [0.1.3](https://github.com/tetsu-i/mycookiecutter/compare/v0.1.2...v0.1.3) (2025-05-17)
 
 
