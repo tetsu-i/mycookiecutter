@@ -1,5 +1,10 @@
 name: mypy
-on: pull_request
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
 jobs:
   mypy:
     uses: ./.github/workflows/ci-base.yml
