@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3](https://github.com/tetsu-i/mycookiecutter/compare/v0.1.2...v0.1.3) (2025-05-17)
+
+
+### Miscellaneous Chores
+
+* add typos ([#26](https://github.com/tetsu-i/mycookiecutter/issues/26)) ([ede1cba](https://github.com/tetsu-i/mycookiecutter/commit/ede1cba597eec16cc652b01c0431923c6491b33d))
+* **deps:** pin crate-ci/typos action to 0f0ccba ([#28](https://github.com/tetsu-i/mycookiecutter/issues/28)) ([ac5889e](https://github.com/tetsu-i/mycookiecutter/commit/ac5889e642ff8ae5c81247cd3d2b15a5a5cf18aa))
+* **deps:** update actions/checkout digest to 85e6279 ([#29](https://github.com/tetsu-i/mycookiecutter/issues/29)) ([d632ef9](https://github.com/tetsu-i/mycookiecutter/commit/d632ef9f549015f69a01f9a22e6da595081cef7f))
+
 ## [0.1.2](https://github.com/tetsu-i/mycookiecutter/compare/v0.1.1...v0.1.2) (2025-05-17)
 
 
