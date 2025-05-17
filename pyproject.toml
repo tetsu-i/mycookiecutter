@@ -28,4 +28,4 @@ testpaths = ["tests"]
 
 
 [tool.deptry.per_rule_ignores]
-DEP001 = ["pydantic_settings"]
+DEP001 = ["pydantic", "pydantic_settings"]
