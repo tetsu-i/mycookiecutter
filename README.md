@@ -4,6 +4,14 @@
 [![pytest](https://github.com/tetsu-i/mycookiecutter/actions/workflows/pytest.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/pytest.yml)
 [![typos](https://github.com/tetsu-i/mycookiecutter/actions/workflows/typos.yml/badge.svg)](https://github.com/tetsu-i/mycookiecutter/actions/workflows/typos.yml)
 
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a9c096f6-12b2-4021-9671-ce89b07fb7d9" width="100%" alt="mycookiecutter">
+</p>
+
+---
+
 # My CookieCutter 
 
 This is a template using [cookiecutter](https://github.com/cookiecutter/cookiecutter).
