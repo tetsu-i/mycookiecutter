@@ -1,6 +1,13 @@
 # {{cookiecutter.project_name}}
 
-# 最初にやること
+# Getting started
+
+## Git
+```
+git init
+git add .
+git commit -m "first commit"
+```
 
 ## uv 
 
@@ -11,55 +18,50 @@ https://docs.astral.sh/uv/
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-### sync
+```bash
+uv sync
+```
+
+## pre-commit
 
 ```bash
-# pyproject.tomlの依存関係をインストール
+uv pre-commit install
+```
+
+# Usage
+
+## uv
+
+```bash
+# install dependencies
 uv sync 
 ```
 
 ```bash
-# 新しい依存関係を追加
 uv add <dependency> 
 
-# devグループに追加
 uv add <dependency> --dev
 
-# 依存関係を削除
 uv remove <dependency> 
 ```
 
-### python
-
 ```bash
-# .python-versionからインストール
+# install python 
 uv python install 
-```
 
-```bash
-# pythonスクリプトの実行
 uv run <your_script.py>
-```
 
-```bash
-# moduleの実行
 uv run -m <module>
 ```
 
-### packageの実行
+## run package
 
 ```bash
-# packageの実行
+# run package
 uv run <package> <args>
-```
 
-```bash
-# 具体例
+# examples
 uv run mypy .
 uv run pytest .
 uv run deptry .
 ```
-
-
-## pre-commit
-### install
