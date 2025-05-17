@@ -2,7 +2,7 @@ name: mypy
 on: pull_request
 jobs:
   mypy:
-    uses: ./.github/ci-base.yml
+    uses: ./.github/workflows/ci-base.yml
     with:
       name: mypy
       args: "mypy ."
