@@ -46,5 +46,3 @@ This is a template using [cookiecutter](https://github.com/cookiecutter/cookiecu
 - [pydantic](https://docs.pydantic.dev/)
 - [pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/)
 
-# License
-Apache License 2.0
