@@ -17,6 +17,7 @@
 - [mypy](https://mypy.readthedocs.io/)
 - [pre-commit](https://pre-commit.com/)
 - [deptry](https://deptry.com/)
+- [typos](https://github.com/crate-ci/typos)
 
 ## Testing
 - [pytest](https://docs.pytest.org/)
