@@ -7,12 +7,7 @@ requires-python = ">=3.12.9, <3.13"
 dependencies = []
 
 [dependency-groups]
-dev = [
-    "deptry>=0.23.0",
-    "mypy>=1.15.0",
-    "pre-commit>=4.2.0",
-    "pytest>=8.3.5",
-]
+dev = ["deptry>=0.23.0", "mypy>=1.15.0", "pre-commit>=4.2.0", "pytest>=8.3.5"]
 
 [tool.mypy]
 exclude = "{{cookiecutter.project_name}}"
@@ -29,3 +24,6 @@ testpaths = ["tests"]
 
 [tool.deptry.per_rule_ignores]
 DEP001 = ["pydantic", "pydantic_settings"]
+
+[tool.typos]
+files.extend-exclude = ["CHANGELOG.md"]
