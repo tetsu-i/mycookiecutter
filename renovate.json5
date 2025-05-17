@@ -1,0 +1,32 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:best-practices"],
+  labels: ["dependencies", "renovate"],
+  timezone: "Asia/Tokyo",
+  prHourlyLimit: 3,
+  schedule: [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend",
+  ],
+  rangeStrategy: "auto",
+  packageRules: [
+    {
+      matchPackageNames: ["python"],
+      automerge: false,
+    },
+    {
+      matchDepTypes: ["devDependencies"],
+      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
+      groupName: "devDependencies",
+      automerge: true,
+    },
+    {
+      matchDepTypes: ["dependencies"],
+      matchUpdateTypes: ["minor", "patch"],
+      matchCurrentVersion: "!/^0/",
+      groupName: "dependencies (non-major)",
+      automerge: true,
+    },
+  ],
+}
