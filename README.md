@@ -6,6 +6,8 @@
 
 # My CookieCutter 
 
+This is a template using [cookiecutter](https://github.com/cookiecutter/cookiecutter).
+
 `uvx cookiecutter https://github.com/tetsu-i/mycookiecutter.git`
 
 
