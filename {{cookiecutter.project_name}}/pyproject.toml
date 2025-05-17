@@ -26,3 +26,6 @@ no_implicit_reexport = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.typos]
+files.extend-exclude = ["CHANGELOG.md"]
