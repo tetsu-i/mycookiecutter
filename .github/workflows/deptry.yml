@@ -3,7 +3,7 @@ on: pull_request
 
 jobs:
   deptry:
-    uses: ./.github/ci-base.yml
+    uses: ./.github/workflows/ci-base.yml
     with:
       name: deptry
       args: "deptry ."
