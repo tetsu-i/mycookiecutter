@@ -19,4 +19,4 @@ jobs:
     steps:
       - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
       - name: Spell Check Repo
-        uses: crate-ci/typos@0f0ccba9ed1df83948f0c15026e4f5ccfce46109 # v1.32.0
+        uses: crate-ci/typos@512fc24f32f44ab01972217aaaf3dc86ec234d53 # v1.50.2
